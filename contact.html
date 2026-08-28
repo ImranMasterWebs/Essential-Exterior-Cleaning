@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Estimate | Essential Exterior Cleaning</title>
+    <meta name="description" content="Contact Essential Exterior Cleaning in Victoria, BC for a free estimate on your exterior cleaning project.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="text-decoration:none;">
+                <span>ESSENTIAL</span><br>
+                <span class="sub-logo">EXTERIOR CLEANING</span>
+            </a>
+            <div class="nav-links desktop-nav">
+                <a href="index.html">HOME</a>
+                <a href="services.html">SERVICES</a>
+                <a href="transformations.html">TRANSFORMATIONS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <a href="contact.html" class="btn-primary desktop-nav">GET A FREE ESTIMATE</a>
+            <button class="hamburger mobile-nav" id="menu-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="services.html">SERVICES</a>
+        <a href="transformations.html">TRANSFORMATIONS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="contact.html" class="btn-primary mt-4">GET A FREE ESTIMATE</a>
+    </div>
+
+    <!-- INTERNAL HERO -->
+    <header class="internal-hero" style="background-image: linear-gradient(rgba(18,18,18,0.7), rgba(18,18,18,0.7)), url('CLEAN 5.png');">
+        <div class="container text-center text-white">
+            <h1 class="headline fade-up">LET'S GET YOUR<br>PROPERTY CLEAN.</h1>
+            <p class="subtitle fade-up mt-4" style="color: white;">FAST, FREE ESTIMATES</p>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="final-cta-section" id="contact" style="padding-top: 6rem; background-color: var(--clr-charcoal);">
+        <div class="container relative z-10 two-col items-start">
+            <div class="cta-text fade-up" style="padding-top: 2rem;">
+                <h2 class="section-title text-white" style="font-size: 3rem;">CONTACT US</h2>
+                <p class="text-white mb-6" style="font-size: 1.25rem;">We're ready to transform your home or business.</p>
+                <div class="contact-info text-white" style="font-size: 1.1rem; line-height: 2;">
+                    <p><strong>ADDRESS:</strong><br>2785 Leigh Rd<br>Victoria, BC V9B 0V4<br>Canada</p>
+                    <p class="mt-4"><strong>PHONE:</strong><br><a href="tel:2502634283" style="color:white; text-decoration:none;">(250) 263 4283</a></p>
+                    <p class="mt-4"><strong>EMAIL:</strong><br><a href="mailto:office@essentialexteriorcleaning.com" style="color:white; text-decoration:none;">office@essentialexteriorcleaning.com</a></p>
+                </div>
+            </div>
+            <div class="cta-form fade-up">
+                <form id="estimate-form" onsubmit="event.preventDefault(); alert('Thank you! Your estimate request has been sent.');">
+                    <h3>REQUEST MY FREE ESTIMATE</h3>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="tel" placeholder="Phone Number" required>
+                    <select required>
+                        <option value="" disabled selected>Select Service Type</option>
+                        <option value="pressure">Pressure Washing</option>
+                        <option value="roof">Roof / Moss Cleaning</option>
+                        <option value="soft">Soft Washing</option>
+                        <option value="window">Window Cleaning</option>
+                        <option value="gutter">Gutter Cleaning</option>
+                        <option value="patio">Patio & Deck Cleaning</option>
+                    </select>
+                    <textarea rows="4" placeholder="Additional Notes (e.g. Property address, specific concerns)"></textarea>
+                    <button type="submit" class="btn-primary w-full" style="width: 100%;">REQUEST MY FREE ESTIMATE</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h4>ESSENTIAL EXTERIOR CLEANING</h4>
+                <p>2785 Leigh Rd<br>Victoria, BC V9B 0V4<br>Canada</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <a href="tel:2502634283">(250) 263 4283</a><br>
+                <a href="mailto:office@essentialexteriorcleaning.com">office@essentialexteriorcleaning.com</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Essential Exterior Cleaning. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

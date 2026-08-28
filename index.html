@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essential Exterior Cleaning | Victoria BC</title>
+    <meta name="description" content="Professional exterior cleaning for homes and businesses across Victoria, BC.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Oswald:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo" style="text-decoration:none;">
+                <span>ESSENTIAL</span><br>
+                <span class="sub-logo">EXTERIOR CLEANING</span>
+            </a>
+            <div class="nav-links desktop-nav">
+                <a href="index.html">HOME</a>
+                <a href="services.html">SERVICES</a>
+                <a href="transformations.html">TRANSFORMATIONS</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+            <a href="contact.html" class="btn-primary desktop-nav">GET A FREE ESTIMATE</a>
+            <button class="hamburger mobile-nav" id="menu-toggle"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="index.html">HOME</a>
+        <a href="services.html">SERVICES</a>
+        <a href="transformations.html">TRANSFORMATIONS</a>
+        <a href="about.html">ABOUT</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="contact.html" class="btn-primary mt-4">GET A FREE ESTIMATE</a>
+    </div>
+
+    <!-- HERO SECTION (Scroll Cinematic) -->
+    <header class="hero-section" id="hero">
+        <div class="hero-pinned-container" id="hero-pinned">
+            <!-- Cinematic Media Layer -->
+            <div class="media-layer">
+                <img src="DIRTY 1.png" alt="Weathered property" class="hero-img dirty-img" id="hero-dirty">
+                <div class="clean-reveal-container" id="hero-clean-container">
+                    <img src="CLEAN 1.png" alt="Clean property" class="hero-img clean-img" id="hero-clean">
+                </div>
+            </div>
+            <!-- Overlay -->
+            <div class="overlay"></div>
+            <!-- Content -->
+            <div class="hero-content" id="hero-content">
+                <p class="subtitle">VICTORIA'S #1 WINDOW CLEANING TEAM</p>
+                <h1 class="headline">YOUR HOME.<br>CLEANED DIFFERENT.</h1>
+                <p class="description">
+                    Professional exterior cleaning for homes and businesses across Victoria, BC — from moss-covered roofs and weathered siding to driveways, windows, gutters and outdoor spaces.
+                </p>
+                <div class="cta-group">
+                    <a href="contact.html" class="btn-primary">GET A FREE ESTIMATE</a>
+                    <a href="transformations.html" class="btn-secondary">SEE THE TRANSFORMATION</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span class="scroll-text">SCROLL TO CLEAN</span>
+                <div class="scroll-line"></div>
+            </div>
+        </div>
+        <!-- Spacer for scroll duration -->
+        <div class="hero-scroll-spacer"></div>
+    </header>
+
+    <!-- THE PROBLEM -->
+    <section class="problem-section" id="problem">
+        <div class="container two-col">
+            <div class="text-content fade-up">
+                <h2 class="section-title">THE PACIFIC NORTHWEST<br>LEAVES ITS MARK.</h2>
+                <p>
+                    Victoria's wet climate and surrounding natural environment inevitably take a toll. Over time, moss, algae, mildew, dirt, and organic buildup accumulate, causing significant weathering and staining to your property.
+                </p>
+            </div>
+            <div class="image-content fade-up parallax-img">
+                <img src="DIRTY 2.png" alt="Moss on roof in PNW">
+            </div>
+        </div>
+    </section>
+
+    <!-- TRANSFORMATION TEASER -->
+    <section class="transformation-section" id="transformation" style="padding-bottom: 6rem;">
+        <div class="container text-center mb-4">
+            <h2 class="section-title fade-up">SEE WHAT A CLEAN<br>CAN DO.</h2>
+            <p class="fade-up mb-6">Our transformations speak for themselves.</p>
+            <div class="slider-container fade-up" style="margin-bottom: 4rem;">
+                <img src="DIRTY 5.png" alt="Dirty Exterior" class="img-background">
+                <div class="img-foreground-container" id="slider-foreground">
+                    <img src="CLEAN 5.png" alt="Clean Exterior" class="img-foreground">
+                </div>
+                <div class="slider-handle" id="slider-handle">
+                    <div class="slider-arrows"></div>
+                </div>
+                <span class="label before">BEFORE</span>
+                <span class="label after">AFTER</span>
+            </div>
+            <a href="transformations.html" class="btn-primary fade-up">VIEW ALL TRANSFORMATIONS</a>
+        </div>
+    </section>
+
+    <!-- SERVICES PREVIEW -->
+    <section class="services-section" style="background-color: var(--clr-offwhite);">
+        <div class="container">
+            <h2 class="section-title text-center mb-8 fade-up">EVERY SURFACE.<br>COVERED.</h2>
+            
+            <div class="service-grid fade-up" style="grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+                <div class="service-card" style="background: white; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                    <h3>PRESSURE WASHING</h3>
+                    <p class="mb-4">Restore hard exterior surfaces like concrete and driveways.</p>
+                </div>
+                <div class="service-card" style="background: white; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                    <h3>ROOF CLEANING</h3>
+                    <p class="mb-4">Safely remove moss, algae and organic buildup.</p>
+                </div>
+                <div class="service-card" style="background: white; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                    <h3>SOFT WASHING</h3>
+                    <p class="mb-4">Safe cleaning for siding, roofs and delicate surfaces.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4 fade-up" style="margin-top: 4rem;">
+                <a href="services.html" class="btn-secondary" style="color: var(--clr-charcoal); border-color: var(--clr-charcoal);">EXPLORE ALL SERVICES</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY ESSENTIAL TEASER -->
+    <section class="about-section" id="about">
+        <div class="container two-col">
+            <div class="image-grid fade-up">
+                <img src="CLEAN 1.png" alt="Professional Cleaning Results" class="img-large">
+            </div>
+            <div class="text-content fade-up">
+                <p class="subtitle">THE ESSENTIAL WAY</p>
+                <h2 class="section-title">PEOPLE OVER<br>PROFITS.</h2>
+                <p>
+                    Your home or business is one of your biggest investments. We treat it with the care and attention it deserves.
+                </p>
+                <ul class="feature-list" style="margin-bottom: 2rem;">
+                    <li><strong>Professional-Grade Equipment</strong></li>
+                    <li><strong>Expert Technicians</strong></li>
+                    <li><strong>200% Satisfaction Guarantee</strong></li>
+                </ul>
+                <a href="about.html" class="btn-text">LEARN ABOUT US &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="process-section">
+        <div class="container text-center">
+            <h2 class="section-title mb-6 fade-up">HOUSE CLEANING, MADE EASY.</h2>
+            <div class="process-grid">
+                <div class="process-step fade-up">
+                    <div class="step-num">01</div>
+                    <h3>TELL US WHAT YOU NEED</h3>
+                    <p>Contact us with your details. We offer easy booking and availability 7 days a week.</p>
+                </div>
+                <div class="process-step fade-up" style="transition-delay: 100ms;">
+                    <div class="step-num">02</div>
+                    <h3>GET YOUR ESTIMATE</h3>
+                    <p>We provide fast, free estimates with same-day availability and competitive pricing.</p>
+                </div>
+                <div class="process-step fade-up" style="transition-delay: 200ms;">
+                    <div class="step-num">03</div>
+                    <h3>LET'S GET TO WORK</h3>
+                    <p>Our experienced technicians deliver exceptional results backed by our guarantee.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section fade-up">
+        <div class="container text-center">
+            <p class="quote">
+                "Incredible attention to detail. The team was highly professional, and our roof and driveway look brand new again."
+            </p>
+            <p class="author">— Victoria Resident</p>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta-section" id="contact">
+        <div class="bg-image">
+            <img src="CLEAN 6.png" alt="Clean Home">
+            <div class="overlay-dark"></div>
+        </div>
+        <div class="container relative z-10 text-center">
+            <div class="cta-text fade-up">
+                <h2 class="section-title text-white">READY TO SEE<br>THE DIFFERENCE?</h2>
+                <p class="text-white mb-6">Give your property the clean it deserves.</p>
+                <a href="contact.html" class="btn-primary" style="font-size: 1.25rem; padding: 1.5rem 3rem;">GET A FREE ESTIMATE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h4>ESSENTIAL EXTERIOR CLEANING</h4>
+                <p>2785 Leigh Rd<br>Victoria, BC V9B 0V4<br>Canada</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-contact">
+                <a href="tel:2502634283">(250) 263 4283</a><br>
+                <a href="mailto:office@essentialexteriorcleaning.com">office@essentialexteriorcleaning.com</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Essential Exterior Cleaning. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
