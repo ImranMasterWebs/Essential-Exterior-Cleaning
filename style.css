@@ -293,7 +293,8 @@ body {
 .overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.2));
+    background: linear-gradient(to right, rgba(18, 18, 18, 0.9) 0%, rgba(18, 18, 18, 0.5) 50%, rgba(18, 18, 18, 0.1) 100%),
+                linear-gradient(to top, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0) 40%);
     z-index: 1;
 }
 
@@ -306,6 +307,18 @@ body {
     justify-content: center;
     padding: 0 10%;
     color: var(--clr-offwhite);
+}
+
+.hero-content .subtitle {
+    color: var(--clr-offwhite);
+    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    opacity: 0.9;
+}
+.hero-content .headline {
+    text-shadow: 0 4px 25px rgba(0,0,0,0.6);
+}
+.hero-content .description {
+    text-shadow: 0 2px 15px rgba(0,0,0,0.5);
 }
 
 .hero-content .description {
@@ -550,12 +563,6 @@ section {
     color: #555;
 }
 
-/* Enhanced Service Sections (Full-width variations) */
-.service-fw {
-    padding: 8rem 0;
-}
-.service-fw.dark-bg {
-    background-color: var(--clr-charcoal);
     color: var(--clr-offwhite);
 }
 .service-fw.dark-bg p { color: #ccc; }
@@ -652,6 +659,83 @@ section {
     .service-fw { padding: 4rem 0; }
     .service-media-large { height: 400px; }
     .service-fw h2 { font-size: 2.5rem; }
+}
+
+/* What Makes Us Different */
+.different-section {
+    background-color: var(--clr-offwhite);
+    padding: 8rem 2rem;
+    position: relative;
+}
+.different-section::before {
+    content: '';
+    position: absolute;
+    top: 4rem;
+    bottom: 4rem;
+    left: 2rem;
+    right: 2rem;
+    background-color: #e8eae9;
+    border-radius: 20px;
+    z-index: 0;
+}
+.different-section .container {
+    position: relative;
+    z-index: 1;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.different-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.different-card {
+    background: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.different-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+}
+.different-icon {
+    width: 64px;
+    height: 64px;
+    background-color: rgba(44, 62, 51, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.different-card h3 {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--clr-charcoal);
+}
+.different-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .different-grid {
+        grid-template-columns: 1fr;
+    }
+    .different-section::before {
+        left: 1rem;
+        right: 1rem;
+    }
 }
 
 /* About Section */
